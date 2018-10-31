@@ -20,8 +20,10 @@ public class TodoController {
 
     @GetMapping("/todos")
     public List<Todo> getAllTodos() {
-        Sort sortByCreatedAtDesc = new Sort(Sort.Direction.DESC, "createdAt");
-        return todoRepository.findAll(sortByCreatedAtDesc);
+        // Sort sortByCreatedAtDesc = new Sort(Sort.Direction.DESC, "createdAt");
+        // return todoRepository.findAll(sortByCreatedAtDesc);
+        Sort sortByEventDateDesc = new Sort(Sort.Direction.DESC, "eventDate");
+        return todoRepository.findAll(sortByEventDateDesc);
     }
 
     @PostMapping("/todos")
