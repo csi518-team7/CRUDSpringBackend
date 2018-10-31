@@ -31,8 +31,6 @@ public class Todo {
 
     private Date eventDate;
 
-    private Date startTime, endTime;
-
     private String city, state;
 
     private int zipCode;
@@ -107,22 +105,6 @@ public class Todo {
 
     public void setPrice(float price) {
         this.price = price;
-    }
-
-    public Date getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
-
-    public Date getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
     }
 
     public String getCity(){
